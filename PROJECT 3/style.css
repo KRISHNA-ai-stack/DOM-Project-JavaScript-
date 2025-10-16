@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    color: white;
+}
+
+HTML , BODY { 
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+}
+
+BODY {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_div {
+    height: 100%;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursor {
+    height: 20px;
+    width: 20px;
+    background: white;
+    /* box-shadow: 1px 1px 5px blue; */
+    border-radius: 50%;
+    position: absolute; /*IMP FOR CURSOR THERE SHOULD BE THIS PROPERTY IN THE CURSOR ELEMENT*/
+
+
+    transition: 0.2s all linear; /*SMOOTH NESS OP LEVEL*/
+
+    mix-blend-mode: difference;
+}
+
+h1 {
+    font-size: 10vw;
+    font-weight: 900;
+}
